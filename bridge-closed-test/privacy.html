@@ -34,7 +34,7 @@
       <p class="eyebrow">Your data, explained plainly</p>
       <h1>Privacy Policy — Bridge: Closed Test</h1>
       <p class="hero-copy">This policy explains what information Bridge uses, why it is needed, and the choices available to you.</p>
-      <p class="updated">Last updated: August 28, 2026</p>
+      <p class="updated">Last updated: August 29, 2026</p>
     </header>
 
     <div class="legal-layout">
@@ -50,7 +50,7 @@
           <li><a href="#advertising">Rewarded ads</a></li>
           <li><a href="#notifications">Notifications</a></li>
           <li><a href="#billing">Play Billing</a></li>
-          <li><a href="#app-check">App Check</a></li>
+          <li><a href="#app-check">Device account limits and App Check</a></li>
           <li><a href="#providers">Service providers</a></li>
           <li><a href="#retention">Retention</a></li>
           <li><a href="#security">Security</a></li>
@@ -126,7 +126,10 @@
         </section>
 
         <section id="app-check">
-          <h2>10. App Check and Play Integrity</h2>
+          <h2>10. Device account limits, App Set ID, and App Check</h2>
+          <p>To help protect the testing economy from multi-account abuse, Bridge allows up to 2 Bridge accounts to be associated with the same Android device identity. This is a device-level control. It does not establish that the accounts belong to the same real-world person.</p>
+          <p>For security, abuse prevention, and enforcement of this account limit, Bridge retrieves the Android App Set ID and its scope from Google Play services. The raw App Set ID is sent only when needed over an authenticated, App Check-protected connection. Bridge does not store the raw App Set ID. The server derives an opaque, deterministic device key and stores only that key with the internal Bridge account associations needed to enforce the limit. These records are not available to normal client reads.</p>
+          <p>Bridge does not use the Advertising ID, hardware serial, IMEI, MAC address, phone number, Google email address, Google display name, SIM data, or an invasive composite device fingerprint for this account-limit feature. The App Set ID and derived device key are not included in Analytics; Firebase Analytics is not enabled.</p>
           <p>Bridge uses Firebase App Check with Google Play Integrity to help protect backend services from abuse, automated misuse, and unauthorized clients. These services may process technical app, device, and integrity information needed to assess whether requests come from a genuine app installation. These protections reduce risk but cannot guarantee that every malicious action will be prevented.</p>
         </section>
 
@@ -135,7 +138,7 @@
           <p>Bridge relies on service providers to operate the app:</p>
           <ul>
             <li><strong>Google Firebase</strong> for authentication, database, server functions, icon storage, messaging, and backend protection;</li>
-            <li><strong>Google Play</strong> for app distribution, account-mediated sign-in components, Play Integrity, and optional purchases; and</li>
+            <li><strong>Google Play</strong> for app distribution, account-mediated sign-in components, App Set ID, Play Integrity, and optional purchases; and</li>
             <li><strong>Google AdMob</strong> and UMP for optional rewarded advertising and applicable consent choices.</li>
           </ul>
           <p>Data may be processed by these providers under their own terms and policies where necessary to provide the service, prevent abuse, comply with law, or maintain their platforms. Processing is not guaranteed to occur only in Sweden or the EEA. You can review <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
