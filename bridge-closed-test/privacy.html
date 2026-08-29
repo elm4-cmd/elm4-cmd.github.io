@@ -46,6 +46,7 @@
           <li><a href="#account-data">Account data</a></li>
           <li><a href="#developer-apps">Developer apps</a></li>
           <li><a href="#feedback">Private feedback</a></li>
+          <li><a href="#app-reports">App reports</a></li>
           <li><a href="#coins">Coins</a></li>
           <li><a href="#advertising">Rewarded ads</a></li>
           <li><a href="#notifications">Notifications</a></li>
@@ -100,33 +101,40 @@
           <p>Free-form private feedback text is not included in push-notification payloads. Notifications may say that feedback is available, after which the authenticated app owner can open Bridge to view it. Private feedback is not used for Firebase Analytics; Firebase Analytics is not enabled.</p>
         </section>
 
+        <section id="app-reports">
+          <h2>6. App reports</h2>
+          <p>When you report a marketplace app, Bridge processes the selected report category, any optional description you provide (up to 500 characters), internal account and listing references, and the report time and status. We use this information to review service safety and listing quality, prevent duplicate reports, and support moderation.</p>
+          <p>Reports are stored in server-only systems and are not shown to the reported app owner. Submitting a report does not automatically remove a listing or change Coins or reliability.</p>
+          <p>Report descriptions are not included in push notifications, Firebase Analytics, or application logs. Firebase Analytics is not enabled.</p>
+        </section>
+
         <section id="coins">
-          <h2>6. Coins</h2>
+          <h2>7. Coins</h2>
           <p>Coins are an in-app participation currency used only within Bridge. They have no cash value, cannot be withdrawn, and cannot be exchanged for money. Eligible testing activity and successfully verified rewarded ads may grant Coins under the current in-app policy.</p>
           <p>Coin grants, spends, reservations, releases, and related mutations are server-authoritative. Bridge keeps Coin account and ledger state to apply limits, resolve balances, prevent duplicate grants, and investigate fraud, abuse, or technical errors.</p>
         </section>
 
         <section id="advertising">
-          <h2>7. Optional rewarded advertising</h2>
+          <h2>8. Optional rewarded advertising</h2>
           <p>Bridge uses Google AdMob for optional rewarded ads. You decide whether to request a rewarded ad; refusing advertising consent does not remove access to Bridge's core testing functionality.</p>
           <p>Google AdMob may process device and app information, IP address, diagnostics, advertising identifiers, and ad interaction information according to your consent choices, device settings, region, and <a href="https://policies.google.com/privacy">Google's privacy policies</a>. Bridge uses Google's User Messaging Platform (UMP) consent flow where required so that relevant privacy choices can be presented or revisited.</p>
           <p>A viewed ad does not by itself guarantee a reward. Coins are granted only after Bridge receives and validates server-side verification under the current reward allowance and anti-abuse rules. Bridge does not sell personal information to advertisers.</p>
         </section>
 
         <section id="notifications">
-          <h2>8. Functional notifications</h2>
+          <h2>9. Functional notifications</h2>
           <p>Bridge may use Firebase Cloud Messaging (FCM) for functional notifications, including Campaign reminders, Campaign lifecycle updates, listing updates, and notice that private feedback is available.</p>
           <p>Notification permission is optional. You can change Android notification permission and available Bridge notification preferences. FCM registration tokens are private infrastructure data used to address notifications to an app installation; they are not public profile identifiers. Free-form private feedback is not included in notification payloads.</p>
         </section>
 
         <section id="billing">
-          <h2>9. Google Play Billing</h2>
+          <h2>10. Google Play Billing</h2>
           <p>Bridge offers optional permanent slot upgrades as one-time products through Google Play Billing. Google handles the payment transaction under Google Play's terms and policies. Bridge receives and verifies limited purchase and entitlement information needed to grant, restore, or protect the upgrade.</p>
           <p>Bridge does not receive or store your payment-card details. Coins are not sold through these purchases.</p>
         </section>
 
         <section id="app-check">
-          <h2>10. Device account limits, App Set ID, and App Check</h2>
+          <h2>11. Device account limits, App Set ID, and App Check</h2>
           <p>To help protect the testing economy from multi-account abuse, Bridge allows up to 2 Bridge accounts to be associated with the same Android device identity. This is a device-level control. It does not establish that the accounts belong to the same real-world person.</p>
           <p>For security, abuse prevention, and enforcement of this account limit, Bridge retrieves the Android App Set ID and its scope from Google Play services. The raw App Set ID is sent only when needed over an authenticated, App Check-protected connection. Bridge does not store the raw App Set ID. The server derives an opaque, deterministic device key and stores only that key with the internal Bridge account associations needed to enforce the limit. These records are not available to normal client reads.</p>
           <p>Bridge does not use the Advertising ID, hardware serial, IMEI, MAC address, phone number, Google email address, Google display name, SIM data, or an invasive composite device fingerprint for this account-limit feature. The App Set ID and derived device key are not included in Analytics; Firebase Analytics is not enabled.</p>
@@ -134,7 +142,7 @@
         </section>
 
         <section id="providers">
-          <h2>11. Service providers and data processing</h2>
+          <h2>12. Service providers and data processing</h2>
           <p>Bridge relies on service providers to operate the app:</p>
           <ul>
             <li><strong>Google Firebase</strong> for authentication, database, server functions, icon storage, messaging, and backend protection;</li>
@@ -146,35 +154,35 @@
         </section>
 
         <section id="retention">
-          <h2>12. Data retention and deletion</h2>
+          <h2>13. Data retention and deletion</h2>
           <p>Bridge keeps account and service data for as long as needed to provide the service, maintain security and abuse records, meet legal obligations, enforce the Terms, or resolve disputes.</p>
           <p>You may request account or data deletion by contacting <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>. Where necessary, limited records may be retained for fraud prevention, security, accounting, dispute resolution, or legal obligations. Some server-authoritative transaction or audit records may therefore not be deleted immediately.</p>
           <p>Service providers may retain data under their own legal requirements and retention policies. Removing Bridge from a device does not by itself delete data held in a Bridge account or by Google services.</p>
         </section>
 
         <section id="security">
-          <h2>13. Security</h2>
+          <h2>14. Security</h2>
           <p>Bridge uses reasonable safeguards appropriate to the service, including Firebase Authentication, App Check, server-authoritative business operations, and access controls for private account and owner data. No internet service can promise absolute security. If you believe your account or data may be at risk, contact support promptly.</p>
         </section>
 
         <section id="children">
-          <h2>14. Children's privacy</h2>
+          <h2>15. Children's privacy</h2>
           <p>Bridge is intended for Android developers and testers. It is not designed for children. If you believe a child has provided personal information through Bridge, contact support so the situation can be reviewed.</p>
         </section>
 
         <section id="rights">
-          <h2>15. Your privacy rights</h2>
+          <h2>16. Your privacy rights</h2>
           <p>Depending on where you live and the circumstances, you may have rights to request access to, correction of, deletion of, restriction of, or objection to processing of your personal data. You may also have a right to complain to the relevant data-protection authority.</p>
           <p>To exercise an applicable right, email <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>. Bridge may need to verify that the request relates to your account before acting on it.</p>
         </section>
 
         <section id="changes">
-          <h2>16. Changes to this Privacy Policy</h2>
+          <h2>17. Changes to this Privacy Policy</h2>
           <p>This policy may be updated when Bridge features, legal requirements, or service providers change. The current version and last-updated date will be published on this page. Material changes may also be communicated in the app or through another appropriate channel.</p>
         </section>
 
         <section id="contact">
-          <h2>17. Contact</h2>
+          <h2>18. Contact</h2>
           <p><strong>Developer:</strong> elm_cr4<br>
           <strong>Email:</strong> <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a><br>
           <strong>Website:</strong> <a href="https://elm4-cmd.github.io/">https://elm4-cmd.github.io/</a></p>
