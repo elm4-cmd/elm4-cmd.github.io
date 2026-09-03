@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Integritetspolicy för Android-appen Röd Puls: Följ Luleå Hockey, inklusive konton, forum, Firebase och dataradering.">
+  <meta name="author" content="elm_cr4">
+  <meta name="theme-color" content="#780f20">
+  <title>Integritetspolicy | Röd Puls: Följ Luleå Hockey</title>
+  <link rel="canonical" href="https://elm4-cmd.github.io/rod-puls/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Hoppa till innehållet</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Röd Puls startsida">Röd Puls</a>
+    <nav aria-label="Huvudnavigation">
+      <a href="index.html">Start</a>
+      <a href="privacy.html" aria-current="page">Integritet</a>
+      <a href="delete-account.html">Radera konto</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <header class="legal-hero">
+      <p class="eyebrow">Din data, tydligt förklarad</p>
+      <h1>Integritetspolicy för Röd Puls: Följ Luleå Hockey</h1>
+      <p class="intro">Här beskriver vi vilka uppgifter appen använder, varför de behövs och vilka val du har.</p>
+      <p class="updated"><strong>Gäller från och senast uppdaterad:</strong> 3 september 2026</p>
+    </header>
+
+    <nav class="contents" aria-label="Innehåll i integritetspolicyn">
+      <p>På den här sidan</p>
+      <ol>
+        <li><a href="#overview">Översikt</a></li>
+        <li><a href="#accounts">Gästläge och konton</a></li>
+        <li><a href="#public-data">Profiler och forum</a></li>
+        <li><a href="#technical-data">Teknisk data</a></li>
+        <li><a href="#local-data">Lokal lagring och backup</a></li>
+        <li><a href="#providers">Tjänsteleverantörer och säkerhet</a></li>
+        <li><a href="#external-links">Externa länkar</a></li>
+        <li><a href="#not-used">Tjänster som inte används</a></li>
+        <li><a href="#retention">Lagring och radering</a></li>
+        <li><a href="#rights">Dina rättigheter och kontakt</a></li>
+      </ol>
+    </nav>
+
+    <article class="legal-card">
+      <section id="overview">
+        <h2>1. Översikt</h2>
+        <p>Den här policyn gäller Android-appen <strong>Röd Puls: Följ Luleå Hockey</strong> (”Röd Puls”), publicerad av <strong>elm_cr4</strong>. Röd Puls samlar matchinformation, nyheter, statistik, supporterprofiler och forumfunktioner på ett ställe.</p>
+        <p>Appen använder uppgifter för att tillhandahålla valda funktioner, autentisera konton, visa offentligt profil- och foruminnehåll, spara inställningar samt skydda tjänsten mot fel och missbruk. Uppgifter säljs inte till annonsörer.</p>
+      </section>
+
+      <section id="accounts">
+        <h2>2. Gästläge, konton och inloggning</h2>
+        <p>Röd Puls kan användas som gäst utan ett appkonto. Gäster kan läsa sådant innehåll som gjorts offentligt tillgängligt men kan inte skriva i forumet, gilla eller följa trådar.</p>
+        <p>Om du väljer att skapa ett konto kan du använda e-postadress och lösenord eller Google-inloggning. Firebase Authentication behandlar autentiseringsuppgifter, e-postadress, ett unikt Firebase UID, inloggningsleverantör och information som behövs för att upprätta och skydda sessionen. Vid Google-inloggning behandlar Google och Firebase relevanta Google-identitetsuppgifter, exempelvis Google-kontoidentifierare och tillgänglig grundläggande profilinformation.</p>
+        <p>Lösenord hanteras av Firebase Authentication. Röd Puls lagrar inte lösenord i appens profil- eller forumdatabas. Läs mer om <a href="https://firebase.google.com/docs/auth">Firebase Authentication</a> och <a href="https://firebase.google.com/docs/auth/users">användaruppgifter i Firebase Authentication</a>.</p>
+      </section>
+
+      <section id="public-data">
+        <h2>3. Användarprofiler, forum och synlighet</h2>
+        <p>Cloud Firestore används för användarprofiler och forum. Beroende på hur du använder appen kan följande uppgifter lagras:</p>
+        <ul>
+          <li>valt användarnamn, bio och avatarval;</li>
+          <li>trådar, kommentarer och svar som du publicerar;</li>
+          <li>likes och summerade like-antal;</li>
+          <li>följda trådar och summerade kommentarsantal; och</li>
+          <li>tekniska tidsstämplar och interna referenser som behövs för funktionerna.</li>
+        </ul>
+        <p><strong>Användarnamn, bio, trådar, kommentarer och svar kan vara offentligt synliga även för personer som inte är inloggade.</strong> Forumdokument innehåller även ett tekniskt Firebase UID för att koppla innehåll till rätt profil. UID:t visas inte som ett vanligt profilfält i appens gränssnitt, men ingår i den tekniska forumstrukturen.</p>
+        <p>Enskilda like-poster och listan över följda trådar är privata och kan inte listas offentligt. Summerade antal likes och kommentarer visas däremot som en del av det offentliga foruminnehållet.</p>
+        <aside class="notice" aria-label="Viktig information om offentliga uppgifter">
+          <p><strong>Lägg inte känsliga personuppgifter</strong> i användarnamn, bio, trådar, kommentarer eller svar. Publicera bara information som du är bekväm med att andra kan läsa.</p>
+        </aside>
+      </section>
+
+      <section id="technical-data">
+        <h2>4. Teknisk data för drift och säkerhet</h2>
+        <p>Firebase och Google kan behandla IP-adress, user-agent samt teknisk information om enheten, appen, operativsystemet och nätverksbegäran. Informationen används bland annat för drift, autentisering, säkerhet, felsökning och skydd mot missbruk.</p>
+        <p>Firebase Authentication kan använda IP-adress och user-agent för kontosäkerhet. Cloud Functions kan tillfälligt behandla IP-adresser när serverfunktioner körs. Vissa tjänstenivå- och säkerhetsloggar som behandlas av Google eller Firebase omfattas av leverantörernas egna säkerhets-, rättsliga och lagringsregler. En kontoradering i Röd Puls innebär därför inte ett löfte om omedelbar radering av alla sådana leverantörsloggar.</p>
+        <p>Mer information finns på sidan <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> och i <a href="https://policies.google.com/privacy?hl=sv">Googles integritetspolicy</a>.</p>
+      </section>
+
+      <section id="local-data">
+        <h2>5. Lokal lagring, offline-cache och Android-backup</h2>
+        <p>Android DataStore används lokalt för inställningar och viss appdata, exempelvis introduktionsstatus, valda inställningar, lästa eller sparade objekt och lokala profilval.</p>
+        <p>Om du väljer att importera egna profil- eller lagbilder lagras dessa endast lokalt i appens privata lagringsutrymme. De laddas inte upp till Röd Puls backend.</p>
+        <p>Cloud Firestore kan använda en lokal offline-cache för att göra tidigare hämtat innehåll tillgängligt och förbättra appens funktion vid tillfälliga nätverksproblem. Lokal appdata kan, beroende på Android-version samt dina enhets- och backupinställningar, omfattas av Androids systembackup. Att rensa appdata eller avinstallera appen påverkar lokal data enligt Androids funktioner, men raderar inte i sig ett Röd Puls-konto i Firebase.</p>
+      </section>
+
+      <section id="providers">
+        <h2>6. Tjänsteleverantörer och säker överföring</h2>
+        <p>Röd Puls använder Google Firebase som teknisk tjänsteleverantör:</p>
+        <ul>
+          <li><strong>Firebase Authentication</strong> för konton och inloggning;</li>
+          <li><strong>Cloud Firestore</strong> för profiler, forum och relaterad funktionalitet; och</li>
+          <li><strong>Cloud Functions for Firebase</strong> för säker serverbehandling, inklusive fullständig kontoradering.</li>
+        </ul>
+        <p>Data skickas krypterat till Firebase och Google via HTTPS/TLS. Åtkomst till Firestore-data styrs genom autentisering och säkerhetsregler. Google behandlar data enligt tillämpliga avtal och sin egen integritetspolicy när företaget tillhandahåller tjänsterna.</p>
+      </section>
+
+      <section id="external-links">
+        <h2>7. Externa nyhetslänkar</h2>
+        <p>Röd Puls kan visa länkar till nyheter eller andra externa webbplatser. När du öppnar en sådan länk lämnar du appen och sidan öppnas i din webbläsare. Den externa webbplatsens ägare ansvarar för sin egen databehandling, sina cookies och sin integritetspolicy.</p>
+        <p>Den här juridiska webbplatsen innehåller inga analys- eller spårningsscript och sätter inga egna cookies. Den använder inga externa typsnitt. Webbplatsen tillhandahålls via GitHub Pages, och GitHub kan behandla vanliga webb- och säkerhetsloggar enligt sina egna villkor och sin integritetspolicy.</p>
+      </section>
+
+      <section id="not-used">
+        <h2>8. Annonsering och telemetri som inte används</h2>
+        <p>Den aktuella releasen av Röd Puls använder inte annonser och samlar inte in Advertising ID. Den använder inte Firebase Analytics, Firebase Crashlytics eller någon annan extern användartelemetri för analys, marknadsföring eller kraschrapportering.</p>
+      </section>
+
+      <section id="retention">
+        <h2>9. Lagring samt konto- och dataradering</h2>
+        <p>Kontouppgifter och användarskapat innehåll lagras så länge kontot och innehållet behövs för att tillhandahålla de funktioner du använder, eller tills du begär radering.</p>
+        <p>Du kan radera kontot i appen via <strong>Hantera konto → Radera konto</strong>. Du kan behöva autentisera dig igen innan raderingen genomförs. Om du inte längre har appen kan du följa instruktionerna på sidan <a href="delete-account.html">Radera konto och data</a>.</p>
+        <p>Vid en fullständig kontoradering tas Firebase Authentication-kontot och appdata som kan kopplas till Firebase UID:t bort. Det omfattar profil, username-reservation, användarens trådar, kommentarer, svar, likes, följda trådar och relevanta UID-kopplade referenser.</p>
+        <p>Efter slutförd radering kan en minimal säkerhetsmarkör kopplad till Firebase UID:t behållas i högst 24 timmar för att blockera redan utfärdade autentiseringstoken. Markören innehåller ingen profil- eller forumdata och tas därefter bort.</p>
+        <p>Om en radering avbryts på grund av ett tekniskt fel markeras den inte som slutförd. Ett tekniskt lås kan då ligga kvar för att förhindra ny kontodata tills raderingen kan återupptas säkert.</p>
+      </section>
+
+      <section id="rights">
+        <h2>10. Tillgång, rättelse, radering och kontakt</h2>
+        <p>Du kan ändra tillgängliga profiluppgifter i appen. Beroende på var du bor och omständigheterna kan du även ha rätt att begära tillgång till, rättelse av eller radering av personuppgifter samt att invända mot eller begränsa viss behandling.</p>
+        <p>För integritetsfrågor eller en begäran om tillgång, rättelse eller radering, kontakta:</p>
+        <address>
+          <strong>Utvecklare:</strong> elm_cr4<br>
+          <strong>E-post:</strong> <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a><br>
+          <strong>Webbplats:</strong> <a href="https://elm4-cmd.github.io/">https://elm4-cmd.github.io/</a>
+        </address>
+        <p>Vi kan behöva verifiera att en begäran gäller ditt konto innan vi lämnar ut, rättar eller raderar kontodata. Skicka aldrig ditt lösenord till supporten.</p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Ändringar i policyn</h2>
+        <p>Policyn kan uppdateras när appens funktioner, tjänsteleverantörer eller rättsliga krav förändras. Den aktuella versionen och datumet för senaste uppdatering publiceras på den här sidan.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p><strong>Röd Puls: Följ Luleå Hockey</strong></p>
+      <p>Publicerad av <a href="https://elm4-cmd.github.io/">elm_cr4</a>.</p>
+    </div>
+    <nav aria-label="Sidfotsnavigation">
+      <a href="index.html">Start</a>
+      <a href="privacy.html">Integritet</a>
+      <a href="delete-account.html">Radera konto</a>
+      <a href="mailto:support.elmcr4@gmail.com">Support</a>
+    </nav>
+  </footer>
+</body>
+</html>
