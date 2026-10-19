@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Bridge: Closed Test, including account, Firebase, app icon, advertising, notification, and purchase data practices.">
+  <meta name="description" content="Privacy Policy for Bridge: Closed Test, including account, Firebase, app icon, notification, purchase, and account deletion data practices.">
   <meta name="author" content="elm_cr4">
   <meta name="theme-color" content="#020b12">
   <title>Privacy Policy — Bridge: Closed Test</title>
@@ -25,6 +25,7 @@
       <a href="index.html">Home</a>
       <a href="privacy.html" aria-current="page">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="account-deletion.html">Delete account</a>
       <a href="mailto:support.elmcr4@gmail.com">Support</a>
     </nav>
   </header>
@@ -34,7 +35,8 @@
       <p class="eyebrow">Your data, explained plainly</p>
       <h1>Privacy Policy — Bridge: Closed Test</h1>
       <p class="hero-copy">This policy explains what information Bridge uses, why it is needed, and the choices available to you.</p>
-      <p class="updated">Last updated: August 29, 2026</p>
+      <p class="updated">Policy text updated: October 16, 2026</p>
+      <p class="status-note" role="note">The manual account-deletion service is not operational yet. See <a href="account-deletion.html">current availability and how to contact the developer</a>. An email or case reference is not confirmation of completed deletion.</p>
     </header>
 
     <div class="legal-layout">
@@ -48,7 +50,7 @@
           <li><a href="#feedback">Private feedback</a></li>
           <li><a href="#app-reports">App reports</a></li>
           <li><a href="#coins">Coins</a></li>
-          <li><a href="#advertising">Rewarded ads</a></li>
+          <li><a href="#advertising">Advertising status</a></li>
           <li><a href="#notifications">Notifications</a></li>
           <li><a href="#billing">Play Billing</a></li>
           <li><a href="#app-check">Device account limits and App Check</a></li>
@@ -64,13 +66,14 @@
         <section id="overview">
           <h2>1. Overview</h2>
           <p>Bridge: Closed Test ("Bridge") is an Android service for coordinating closed testing between developers and testers. The developer is <strong>elm_cr4</strong>. Questions and data requests may be sent to <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>.</p>
-          <p>Bridge uses information only as needed to authenticate accounts, operate testing and Campaign features, maintain Coins and reliability state, deliver requested functions, protect the service, and meet legal obligations. Bridge does not sell personal information to advertisers.</p>
+          <p>Bridge uses information only as needed to authenticate accounts, operate testing features, maintain Coins, purchases and reliability state, deliver requested functions, protect the service, and meet applicable obligations. Campaign participation is paused and rewarded advertising is disabled in this release. Existing obligations and purchase records may still need to be resolved. Bridge does not sell personal information to advertisers.</p>
           <p><strong>Firebase Analytics is not enabled. Firebase Crashlytics is not enabled.</strong></p>
         </section>
 
         <section id="sign-in">
           <h2>2. Information used for sign-in</h2>
           <p>Bridge uses Google Sign-In and Firebase Authentication. Google and Firebase Authentication process the information needed to authenticate your Google account, establish a Firebase identity, help secure sign-in, and manage the authenticated session.</p>
+          <p>You may explore the public parts of Bridge without signing in. Exploring does not create a Bridge account. Account actions, including starting a Test, adding an app or making a purchase, require Google sign-in.</p>
           <p>Bridge uses the authenticated Firebase identity internally to associate service data with the correct account. Bridge does not publish your Google email address. Instead, you choose a public Bridge alias. Your Google display name or email address is not silently adopted as that public alias.</p>
         </section>
 
@@ -82,7 +85,7 @@
             <li>Coin balance, Coin ledger entries, reservations, and other account state;</li>
             <li>reliability state and events used to support genuine participation;</li>
             <li>DeveloperApp ownership and marketplace state;</li>
-            <li>Test sessions, completion state, Campaign participation, and warnings; and</li>
+            <li>Test sessions, completion state, and any existing Campaign participation or warnings; and</li>
             <li>notification permission and preference state.</li>
           </ul>
           <p>Some marketplace information—such as public aliases, app listings, and app icons—is visible to other Bridge users because those features are designed for community coordination. Internal account identifiers, Coin ledgers, private notification infrastructure, and other private account records are not intended as public profile content.</p>
@@ -110,27 +113,27 @@
 
         <section id="coins">
           <h2>7. Coins</h2>
-          <p>Coins are an in-app participation currency used only within Bridge. They have no cash value, cannot be withdrawn, and cannot be exchanged for money. Eligible testing activity and successfully verified rewarded ads may grant Coins under the current in-app policy.</p>
-          <p>Coin grants, spends, reservations, releases, and related mutations are server-authoritative. Bridge keeps Coin account and ledger state to apply limits, resolve balances, prevent duplicate grants, and investigate fraud, abuse, or technical errors.</p>
+          <p>Coins are an in-app participation currency used only within Bridge. They have no cash value, cannot be withdrawn, and cannot be exchanged for money. Eligible testing activity may grant Coins under the current in-app policy. Optional Coin packs may be purchased through Google Play Billing when offered in Bridge. Rewarded advertising is disabled in this release.</p>
+          <p>Coin grants, purchases, spends, reservations, releases and recovery adjustments are server-authoritative. Bridge keeps Coin account, ledger and purchase-verification state to apply limits, resolve balances, prevent duplicate grants and investigate fraud, abuse or technical errors.</p>
         </section>
 
         <section id="advertising">
-          <h2>8. Optional rewarded advertising</h2>
-          <p>Bridge uses Google AdMob for optional rewarded ads. You decide whether to request a rewarded ad; refusing advertising consent does not remove access to Bridge's core testing functionality.</p>
-          <p>Google AdMob may process device and app information, IP address, diagnostics, advertising identifiers, and ad interaction information according to your consent choices, device settings, region, and <a href="https://policies.google.com/privacy">Google's privacy policies</a>. Bridge uses Google's User Messaging Platform (UMP) consent flow where required so that relevant privacy choices can be presented or revisited.</p>
-          <p>A viewed ad does not by itself guarantee a reward. Coins are granted only after Bridge receives and validates server-side verification under the current reward allowance and anti-abuse rules. Bridge does not sell personal information to advertisers.</p>
+          <h2>8. Advertising status</h2>
+          <p>Rewarded advertising is disabled in this release. This release does not offer rewarded-ad viewing or request ads through an active AdMob advertising configuration.</p>
+          <p>Existing verified rewards, unsettled claims or provider callback records may still require reconciliation and limited retention for an identified purpose. Disabling ads does not itself settle or erase those records. Any future advertising activation requires an updated disclosure and applicable consent choices before ad requests begin.</p>
         </section>
 
         <section id="notifications">
           <h2>9. Functional notifications</h2>
-          <p>Bridge may use Firebase Cloud Messaging (FCM) for functional notifications, including Campaign reminders, Campaign lifecycle updates, listing updates, and notice that private feedback is available.</p>
+          <p>Bridge may use Firebase Cloud Messaging (FCM) for functional notifications, including listing updates and notice that private feedback is available. Campaign participation is paused in this release; existing Campaign and notification records may remain where an actual obligation or identified security purpose requires them. The Test timer completion notification is a device notification; it does not by itself grant Coins or complete a server-authorized Test.</p>
           <p>Notification permission is optional. You can change Android notification permission and available Bridge notification preferences. FCM registration tokens are private infrastructure data used to address notifications to an app installation; they are not public profile identifiers. Free-form private feedback is not included in notification payloads.</p>
         </section>
 
         <section id="billing">
           <h2>10. Google Play Billing</h2>
-          <p>Bridge offers optional permanent slot upgrades as one-time products through Google Play Billing. Google handles the payment transaction under Google Play's terms and policies. Bridge receives and verifies limited purchase and entitlement information needed to grant, restore, or protect the upgrade.</p>
-          <p>Bridge does not receive or store your payment-card details. Coins are not sold through these purchases.</p>
+          <p>Bridge offers optional Coin packs and permanent Test slot upgrades as one-time products through Google Play Billing when available in the app. Coin packs are consumable purchases; permanent Test slot upgrades are non-consumable rights. Campaign purchases are unavailable while Campaign participation is paused.</p>
+          <p>Google handles payment under Google Play's terms and policies. Bridge receives and verifies purchase information, including the product, purchase token or derived identity, purchase state and account attribution, to fulfil purchases, prevent duplicate or misattributed grants, reconcile pending or reversed purchases, restore eligible rights and recover an interrupted verified fulfilment.</p>
+          <p>Bridge does not receive or store your payment-card details. A Play callback, restore request or account-deletion request does not by itself grant, refund, forfeit or transfer Coins or purchased rights.</p>
         </section>
 
         <section id="app-check">
@@ -146,8 +149,7 @@
           <p>Bridge relies on service providers to operate the app:</p>
           <ul>
             <li><strong>Google Firebase</strong> for authentication, database, server functions, icon storage, messaging, and backend protection;</li>
-            <li><strong>Google Play</strong> for app distribution, account-mediated sign-in components, App Set ID, Play Integrity, and optional purchases; and</li>
-            <li><strong>Google AdMob</strong> and UMP for optional rewarded advertising and applicable consent choices.</li>
+            <li><strong>Google Play</strong> for app distribution, account-mediated sign-in components, App Set ID, Play Integrity and optional purchases.</li>
           </ul>
           <p>Data may be processed by these providers under their own terms and policies where necessary to provide the service, prevent abuse, comply with law, or maintain their platforms. Processing is not guaranteed to occur only in Sweden or the EEA. You can review <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
           <p>This public legal site is static: it contains no analytics or third-party tracking scripts and creates no cookies itself. It is hosted by GitHub Pages, which may process ordinary web-request and security data under GitHub's policies.</p>
@@ -155,9 +157,12 @@
 
         <section id="retention">
           <h2>13. Data retention and deletion</h2>
-          <p>Bridge keeps account and service data for as long as needed to provide the service, maintain security and abuse records, meet legal obligations, enforce the Terms, or resolve disputes.</p>
-          <p>You may request account or data deletion by contacting <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>. Where necessary, limited records may be retained for fraud prevention, security, accounting, dispute resolution, or legal obligations. Some server-authoritative transaction or audit records may therefore not be deleted immediately.</p>
-          <p>Service providers may retain data under their own legal requirements and retention policies. Removing Bridge from a device does not by itself delete data held in a Bridge account or by Google services.</p>
+          <p>You can contact the developer about account closure and deletion at <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a> without installing or opening Bridge. The <a href="account-deletion.html">account deletion page</a> explains the current availability and the conditions for a verified case. The manual deletion service is not operational yet; contact alone does not delete the account. Deleting Bridge from a device does not delete its server account or your Google account.</p>
+          <p>Before closure, a responsible operator must verify account ownership and reconcile valid existing commitments. After closure you cannot use that account's Coins or Bridge rights there. If Coins, purchased rights, unresolved purchases or other obligations remain, support must provide a private, itemised list and record your informed final case outcome before completion. A deletion request does not automatically refund, forfeit or transfer value to another account.</p>
+          <p>A verified deletion plan must cover the sign-in account, profile and alias, app listings and icons, Test and Campaign participation, feedback, reports, notification registrations and linked economic records. It must distinguish data to be deleted from limited records that remain necessary, identify the actual purpose for retaining each record and specify the verified condition for its removal. Contact details, identity-confirmation material and full private case proof must be removed once their verified purpose has ended. Hashed or pseudonymous records are not assumed to be anonymous.</p>
+          <p>Limited purchase-replay, account-admission and outcome records may be necessary while identified callback, restore or request-integrity paths could otherwise reintroduce the account or duplicate an effect. Their necessity and removal condition must be reviewed; this does not authorise indefinite retention of unrelated personal data.</p>
+          <p>The case plan must include actual mail, logs, exports, backups, point-in-time recovery, stored icon versions and soft-deleted copies. Restored copies must have the accepted deletions and required account protections reapplied before access is reopened. This page cannot remotely erase an offline device; confirmed server closure and clearing of the local data managed by Bridge must be checked when the app next connects.</p>
+          <p>Actual provider and backup handling conditions have not yet been verified. No fixed processing or retention period is promised here. A blocked case requires a specific unresolved item and an actual next review or action. Completion requires verified account closure and data handling, followed by a final confirmation explaining the outcome and any necessary retained records.</p>
         </section>
 
         <section id="security">
@@ -173,7 +178,7 @@
         <section id="rights">
           <h2>16. Your privacy rights</h2>
           <p>Depending on where you live and the circumstances, you may have rights to request access to, correction of, deletion of, restriction of, or objection to processing of your personal data. You may also have a right to complain to the relevant data-protection authority.</p>
-          <p>To exercise an applicable right, email <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>. Bridge may need to verify that the request relates to your account before acting on it.</p>
+          <p>To exercise an applicable right, email <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>. For account closure, use the <a href="account-deletion.html">account deletion request instructions</a>. Bridge may need to verify that the request relates to your account before acting on it.</p>
         </section>
 
         <section id="changes">
@@ -201,6 +206,7 @@
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="account-deletion.html">Delete account</a>
       <a href="mailto:support.elmcr4@gmail.com">Support</a>
     </nav>
   </footer>
