@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Support — {{APP_NAME}}</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+    <a class="developer-link" href="../index.html">elm_cr4 Android apps</a>
+    <nav aria-label="App pages">
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="support.html" aria-current="page">Support</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main-content">
+    <aside class="draft" aria-label="Draft notice">
+        <p><strong>Draft — not yet effective.</strong> The app name, policy date and support-message retention details are being finalised.</p>
+    </aside>
+    <h1>Support for {{APP_NAME}}</h1>
+    <p>Contact Emil Lindström (elm_cr4), Sweden, at <a href="mailto:support.elmcr4@gmail.com">support.elmcr4@gmail.com</a>.</p>
+
+    <section aria-labelledby="report-issue">
+        <h2 id="report-issue">Report a problem</h2>
+        <p>Please include:</p>
+        <ul>
+            <li>The app version, phone model and Android version.</li>
+            <li>What you were doing, what you expected and what happened.</li>
+            <li>The steps that reproduce the issue, if known.</li>
+        </ul>
+        <p>A short description is usually enough to start. Do not send passwords or tokens. Avoid sending full training exports or body measurements unless you choose to share information needed to explain the issue.</p>
+    </section>
+    <section aria-labelledby="export-question">
+        <h2 id="export-question">Can I restore an exported file?</h2>
+        <p>CSV and ZIP document parts of your content for your own records. Export coverage is partial. This version cannot import those files, so they are not a complete restorable backup.</p>
+        <p>You choose the destination through Android's file picker. If you choose a cloud provider, that provider handles the exported copy. Manage or delete exported files through their chosen storage provider.</p>
+    </section>
+    <section aria-labelledby="phone-question">
+        <h2 id="phone-question">What happens when I change phones or reinstall?</h2>
+        <p>Android may back up or transfer 30 selected app, timer-cue and progression settings. Workout history and body measurements are not included in that settings backup. Restored settings do not restore your training history.</p>
+        <p>The app does not offer account sync or a file-import route for moving training history to another installation in this release.</p>
+    </section>
+    <section aria-labelledby="message-privacy">
+        <h2 id="message-privacy">Your support message</h2>
+        <p>We receive the information you include when you email us. <a href="privacy.html#support-messages">Read how support messages are handled</a>.</p>
+        <p class="pending-block">{{SUPPORT_RETENTION_AND_DELETION}}</p>
+    </section>
+</main>
+<footer>
+    <p>This website is hosted on GitHub Pages. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+</footer>
+</body>
+</html>
