@@ -58,29 +58,7 @@ li + li { margin-top: 8px; }
 ul, ol { padding-left: 1.4em; }
 section { scroll-margin-top: 16px; }
 
-.draft {
-    margin-bottom: 28px;
-    padding: 16px;
-    border: 1px solid #d4b879;
-    border-radius: 12px;
-    background: #fff8e8;
-    color: #604207;
-}
-.draft p { margin: 0; }
-.draft strong { display: block; margin-bottom: 4px; }
 .meta { color: #42566c; }
-.pending-value {
-    font-weight: 600;
-    background: #fff3d5;
-    color: #604207;
-    padding: 0.1em 0.25em;
-}
-.pending-block {
-    padding: 12px 16px;
-    border-left: 4px solid #d4b879;
-    background: #fff8e8;
-    color: #604207;
-}
 .page-links { list-style: none; padding: 0; }
 .page-links a { display: inline-block; padding: 8px 0; font-weight: 600; }
 
