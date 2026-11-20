@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Inbjudan till RULLA</title>
+  <style>
+    :root{color-scheme:dark;font:16px/1.5 system-ui,sans-serif;background:#111820;color:#edf1f3}
+    body{margin:0;padding:1.25rem;display:grid;place-items:center;min-height:70vh}
+    main{max-width:29rem;padding:1.5rem;border:1px solid #35434d;border-radius:1.3rem;background:#1b252e}
+    h1{margin-top:0;line-height:1.2} p{color:#d0dadc} a,button{font:inherit}
+    output{display:inline-block;font-size:1.65rem;font-weight:700;letter-spacing:.12em;color:#aec7af}
+    button,.store{display:inline-flex;align-items:center;min-height:44px;margin-top:.6rem;padding:0 .9rem;border:1px solid #aec7af;border-radius:1rem;background:#aec7af;color:#131e19;text-decoration:none;font-weight:650}
+    [hidden]{display:none!important} footer{margin-top:1rem} footer a{color:#aec7af}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Inbjudan till RULLA</h1>
+    <section id="invitation" hidden>
+      <p>Spara koden. Om länken öppnas i webbläsaren kan du ange koden när du sparar ditt första garage i RULLA.</p>
+      <output id="code" aria-label="Inbjudningskod"></output><br>
+      <button id="copy" type="button" hidden>Kopiera koden</button>
+      <p id="status" role="status"></p>
+    </section>
+    <p id="missing">Be personen som bjöd in dig om en ny länk eller en inbjudningskod.</p>
+    <a class="store" href="https://play.google.com/store/apps/details?id=se.rulla.app">Öppna RULLA på Google Play</a>
+    <footer><a href="../privacy.html">Integritet</a></footer>
+  </main>
+  <script>
+    const match = /^\?code=([a-z0-9]{6,16})$/i.exec(location.search);
+    if (match) {
+      const code = match[1].toUpperCase();
+      document.getElementById('invitation').hidden = false;
+      document.getElementById('missing').hidden = true;
+      document.getElementById('code').textContent = code;
+      const copy = document.getElementById('copy');
+      const status = document.getElementById('status');
+      if (navigator.clipboard) {
+        copy.hidden = false;
+        copy.addEventListener('click', async () => {
+          try { await navigator.clipboard.writeText(code); status.textContent = 'Koden är kopierad.'; }
+          catch { status.textContent = 'Markera koden och kopiera den manuellt.'; }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
